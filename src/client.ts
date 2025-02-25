@@ -64,10 +64,14 @@ class StarknetIndexer {
 
                         const eventPayload = {
                             type: "event",
+                            block_number: Number(block.header?.blockNumber?.toString()),
                             event_name: eventName,
                             from_address: fromAddress,
                             keys: keys,
                             data: event.event.data.map((d) => FieldElement.toHex(d)),
+                            transaction_hash: event.receipt?.transactionHash
+                                ? FieldElement.toHex(event.receipt.transactionHash)
+                                : "0x0",
                         };
 
                         console.log(`📡 Event in block #${block.header?.blockNumber || "unknown"}:`);
