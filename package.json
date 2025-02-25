@@ -1,0 +1,28 @@
+{
+  "name": "my-indexer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@apibara/protocol": "^0.4.9",
+    "@apibara/starknet": "^0.5.0",
+    "@ekubo/sdk": "^0.0.6",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.2",
+    "starknet": "^6.11.0",
+    "uuid": "^10.0.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^10.0.0",
+    "@types/ws": "^8.5.12",
+    "abi-wan-kanabi": "^2.2.3",
+    "ts-node": "^10.9.2"
+  }
+}
