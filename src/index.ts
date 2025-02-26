@@ -9,8 +9,7 @@ async function main() {
     console.log("✅ WebSocket server started on port 3003");
 
     console.log("📡 Connecting to Apibara and starting event indexing...");
-    client.startListening();
-    console.log("✅ Event indexing started");
+    client.init();
 
     process.on("SIGINT", () => {
         console.log("🛑 Shutting down gracefully...");
